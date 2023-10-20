@@ -1,6 +1,22 @@
 import { getSortedPostsData } from "@/lib/posts";
 import ListItem from "./ListItem";
 
+// export const revalidate = 10;
+
+// export function getStaticProps() {
+// const res = await fetch("https://.../posts");
+// const posts = await res.json();
+// return {
+//   // props: {
+//   //   posts,
+//   // },
+//   // Next.js will attempt to re-generate the page:
+//   // - When a request comes in
+//   // - At most once every 10 seconds
+//   revalidate: 10, // In seconds
+// };
+// }
+
 export default function Posts() {
   const posts = getSortedPostsData();
 
